@@ -149,6 +149,10 @@ nav ul a{
     grid-row: span 2;
     border-radius: 20px;
 }
+#item h1{
+    margin-top: 150px;
+    margin-left: 100px;
+}
 #item>a{
     text-align: center;
     color: white;
@@ -351,6 +355,13 @@ nav ul a{
         
         
         
+    }
+    #item>h1{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    #item>a{
+        margin-left: 120px;
     }
     /* .colorful-Bunch */
     .colorful-Bunch{
