@@ -61,6 +61,9 @@ nav ul a{
 .deals-title{
  text-align: center;
 }
+.Plants-item h1{
+    text-align: center;
+}
 .Plants-item>button{
     width: 100%;
     background-color: #E95A08;
@@ -70,6 +73,7 @@ nav ul a{
 }
 .plants-title h1{
     text-align: center;
+    
 }
 .plants-title p{
     text-align: center;
