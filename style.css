@@ -1,6 +1,7 @@
-.hide{
+/* .hide{
     display: none !important;
-}
+} */
+ .width
 
 /* google fonts */
 .open-sans-inter {
@@ -120,6 +121,9 @@ nav ul a{
 }
 .deals-title h1{
     text-align: center;
+}
+.latest{
+    color: #E95A08;
 }
 .LatestDeals-container{
     width: 100%;
