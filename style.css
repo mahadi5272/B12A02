@@ -1,7 +1,10 @@
 /* .hide{
     display: none !important;
 } */
- .width
+ .width{
+    width: 1140px;
+    margin: 0 auto;
+ }
 
 /* google fonts */
 .open-sans-inter {
