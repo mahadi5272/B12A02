@@ -195,8 +195,38 @@ nav ul a{
     color: white;
     text-align: center;
 }
-
-
+/* footer-container */
+.footer-container{
+    max-width: 1440px;
+    height: 348px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-left: 250px;
+    display: flex;
+    
+}
+.containt{
+    width: 359px;
+    color: gray;
+    
+}
+.list{
+    margin-left: 30px;
+    display: flex;
+    gap: 80px;
+    
+}
+.list ul li{
+    list-style: none;
+    margin-bottom: 30px;
+    color: gray;
+}
+.icon{
+    margin-left: 100px
+}
+.icon img{
+    margin-right: 20px;
+}
 
  /* media quari */
  @media screen and (max-width:576px)
