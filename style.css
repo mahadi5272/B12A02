@@ -1,3 +1,6 @@
+.hide{
+    display: none !important;
+}
 
 /* google fonts */
 .open-sans-inter {
@@ -13,9 +16,11 @@ header{
     margin: 0 auto;
 }
 nav{
-    width: 700px;
+    width: 1140px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 nav ul{
      display: flex;
@@ -52,8 +57,8 @@ nav ul a{
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
-.Plants-item>h1,p{
-    text-align: center;
+.deals-title{
+ text-align: center;
 }
 .Plants-item>button{
     width: 100%;
@@ -74,8 +79,8 @@ nav ul a{
 }
 /* Lover-container */ 
 .Lover{
-    max-width: 1140px;
-    margin: 0 auto;
+    max-width: 1280px;
+     margin: 0 auto;
     margin-top: 150px;
     position: relative;
 }
@@ -104,21 +109,20 @@ nav ul a{
 }
 /* LatestDeals*/
  .LatestDeals{
-    max-width: 1140px;
+    max-width: 1280px;
     margin: 0 auto;
     
 }
 .deals-title{
-    margin: 0 auto;
+    margin: 90px auto 100px;
     width: 620px;
-    margin-top: 110px;
-    margin-bottom: 100px;
+
 }
 .deals-title h1{
     text-align: center;
 }
 .LatestDeals-container{
-    /* width: 950px;  */
+    width: 100%;
     height: 323px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -128,20 +132,41 @@ nav ul a{
     grid-column: span 2;
     border-radius: 20px;
 }
+#item-1>a{
+    /* margin-left: 100px; */
+    color: white;
+}
 #item{
     grid-column: span 3;
     grid-row: span 2;
     border-radius: 20px;
+}
+#item>a{
+    text-align: center;
+    color: white;
+    margin-left: 180px;
+    
+}
+#item>h1{
+    margin-left: 130px;
 }
 
 #item-3{
     grid-column: span 2;
     border-radius: 20px;
 }
+#item-3>a{
+    margin-left: 100px;
+    color: white;
+}
+#item-3>h1{
+    margin-left: 50px;
+}
 
 .LatestDeals-tiem-1{
     background-image: url("./assets/deal-bloom.png");
     background-repeat: no-repeat;
+    background-size: 100%;
     text-align: center;
     color: white;
 
@@ -150,12 +175,16 @@ nav ul a{
     background-image: url("./assets/deal-zabo.png");
     background-repeat: no-repeat;
     color: white;
+     background-size: 100%;
     
 }
 .LatestDeals-tiem-3{
     background-image: url("./assets/deal-ana.png");
     background-repeat: no-repeat;
+    background-size: 100%;
     color: white;
+    
+    
     
 } 
 /* colorful Bunch */
@@ -197,12 +226,12 @@ nav ul a{
 }
 /* footer-container */
 .footer-container{
-    max-width: 1440px;
-    height: 348px;
+    max-width: 1140px;
+    height:auto;
     margin: 0 auto;
     margin-top: 80px;
-    padding-left: 250px;
     display: flex;
+    justify-content: space-between;
     
 }
 .containt{
@@ -211,9 +240,9 @@ nav ul a{
     
 }
 .list{
-    margin-left: 30px;
+
     display: flex;
-    gap: 80px;
+    /* gap: 80px; */
     
 }
 .list ul li{
@@ -229,13 +258,17 @@ nav ul a{
 }
 
  /* media quari */
- @media screen and (max-width:576px)
+ @media screen and (max-width:768px)
   {
+    header > nav{
+        gap: 200px;
+    }
     nav{
-        width: 395px;
+        width:361px ;
+        margin: 0;
     }
     .nav-list{
-        visibility: hidden;
+        display: none;
     }
     .banner-container{
         width: 395px;
@@ -245,13 +278,71 @@ nav ul a{
     .Plants-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        place-items: center;
+        /* width: 171px; */
+    }
+    .Plants-item img{
+        width:171px ;
+        height: 196px;
+    }
+    .Plants-item button{
+        width: 171px;
         
+    }
+    .Lover{
+        width: auto;
+        overflow-x: hidden;
     }
     .Lover-container{
         flex-direction: column;
+        
+        gap: 0;
+        
+    }
+    .Lover-item img{
+        width:358px ;
+        height: 396px;
+    }
+    .Lover-item h1{
+        margin-top: 100px;
+        font-size: 24px;
+    }
+    .Lover-item ul{
+        font-size: 14px;
+    }
+    .Lover-container{
+        width: 350px;
     }
     .lover-position{
         visibility: hidden;
+    }
+    /* LatestDeals-container */
+    .LatestDeals-container{
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        gap: 50pxpx;
+        margin-bottom: 400px;
+    }
+    .deals-title h1{
+         font-size: 24px;
+    }
+    .deals-title{
+        width: 350px;
+    }
+    .deals-title p{
+        font-size: 14px;
+    }
+    /* .LatestDeals-tiem-1{
+        border-radius: 800px;
+    } */
+    
+    #item-1, #item, #item-3{
+        width: 366px;
+        height: 200px;
+        
+        
+        
+        
     }
     /* .colorful-Bunch */
     .colorful-Bunch{
@@ -276,6 +367,33 @@ nav ul a{
     .colorful-Bunch>form{
         margin-left: 80px;
     }
+/* footer-container */
+.footer-container{
+    max-width: 393px;
+    height: 885px;
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.list{
+    flex-direction: column;
+}
+.containt{
+    padding-left:40px ;
+}
+.containt{
+    width:359px;
+    height:173px;
+    
+}
+.containt img{
+    width: 180px;
+    height: 109px;
+}
+.icon{
+    margin-left: 30px;
+}
 
 
 
